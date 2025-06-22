@@ -1,0 +1,24 @@
+name: 🚀 Simple CI Demo
+
+# Trigger the workflow on push to any branch
+on: [push]
+
+jobs:
+  build:
+    name: 🛠️ Build Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🔧 Set up Environment
+        run: echo "Setting up environment..."
+
+      - name: 🏗️ Build Project
+        run: echo "Building the project..."
+
+      - name: ✅ Run Tests
+        run: |
+          echo "Running tests..."
+          echo "All tests passed ✅"
